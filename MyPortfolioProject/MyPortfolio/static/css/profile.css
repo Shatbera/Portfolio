@@ -1,0 +1,61 @@
+.profile-image {
+    width: 200px;
+    /* Set the desired width of the image */
+    height: 200px;
+    /* Set the desired height of the image */
+    border-radius: 50%;
+    /* Make the image circular */
+    border: 2px solid rgb(255, 248, 234);
+    /* Add a white border around the image */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Add a subtle shadow for depth */
+
+    /* display: block;
+    margin: 0 auto; */
+}
+
+h2{
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.social-icons li {
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    /* Adjust the size of the icons as needed */
+    height: 30px;
+    border-radius: 50%;
+    /* Add any additional styling as needed */
+}
+
+.project-link a {
+    display: block;
+    padding: 10px;
+    border: 1px solid #69dcff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    /* color: #007bff; */
+    text-decoration: none;
+    /* Remove underline */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-link a:hover {
+    background-color: #69dcff;
+}
+
+.separator {
+    border: 1px solid rgb(255, 248, 234);
+    /* Adjust the color of the line as needed */
+    margin: 20px 0;
+    /* Adjust the margin to control the space around the line */
+}

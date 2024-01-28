@@ -1,0 +1,56 @@
+.video-container iframe {
+    width: 95%;
+    height: 95%;
+}
+
+
+.game-info {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    height: calc(640px * 0.5625);
+}
+
+.game-info p::before {
+    content: attr(data-label);
+    font-style: italic;
+    margin-right: 5px;
+}
+
+
+.contribution {
+    clear: both;
+    /* This will ensure that the contribution div appears below floating elements */
+    padding-top: 20px;
+    /* Add some spacing between the game info and contribution */
+}
+
+/* Additional styling for the contribution content */
+.contribution h2 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.contribution p,
+.contribution ul {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.contribution ul {
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+
+.badges {
+    display: flex;
+}
+
+.badges img {
+    width: 150px;
+    /* Adjust the width as needed */
+    height: auto;
+    /* Maintain the aspect ratio */
+    padding-right: 10px;
+}
