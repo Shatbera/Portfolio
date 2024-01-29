@@ -21,7 +21,6 @@
     float: left;
     width: 50%;
     box-sizing: border-box;
-    height: calc(640px * 0.5625);
 }
 
 .game-info p::before {
@@ -75,5 +74,8 @@
     .video-container iframe {
         width: 100%;
         height: 100%;
+    }
+    .game-info {
+        padding-top: 20px;
     }
 }
