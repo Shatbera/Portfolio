@@ -6,7 +6,6 @@ $(document).ready(function() {
     $('.nav-link').each(function() {
         var linkPath = $(this).attr('href');
         if (linkPath === currentPath) {
-            console.log("Active");
             $(this).addClass('active');
         }
     });
