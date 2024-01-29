@@ -1,9 +1,22 @@
-.video-container iframe {
-    width: 95%;
-    height: 95%;
+/* Default styles for video container */
+.video-container {
+    float: left;
+    width: 50%;
+    /* Set your desired custom width */
+    padding-top: 28.125%; /* 16:9 aspect ratio (height is 56.25% of width) */
+    position: relative;
+    box-sizing: border-box;
 }
 
+.video-container iframe {
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    top: 0;
+    left: 0;
+}
 
+/* Other styles for game info, contribution, badges, etc. */
 .game-info {
     float: left;
     width: 50%;
@@ -17,15 +30,12 @@
     margin-right: 5px;
 }
 
-
+/* Styles for contribution section */
 .contribution {
     clear: both;
-    /* This will ensure that the contribution div appears below floating elements */
     padding-top: 20px;
-    /* Add some spacing between the game info and contribution */
 }
 
-/* Additional styling for the contribution content */
 .contribution h2 {
     font-size: 24px;
     text-align: center;
@@ -42,15 +52,24 @@
     margin-left: 20px;
 }
 
-
+/* Styles for badges */
 .badges {
     display: flex;
 }
 
 .badges img {
     width: 150px;
-    /* Adjust the width as needed */
     height: auto;
-    /* Maintain the aspect ratio */
     padding-right: 10px;
+}
+
+/* Media query for responsive design on mobile devices */
+@media screen and (max-width: 1080px) {
+    .video-container{
+        width: 100%;
+        padding-top: 56.25%;
+    }
+    .game-info {
+        width: 100%;
+    }
 }

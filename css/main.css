@@ -20,16 +20,3 @@ a {
     color: rgb(255, 248, 234);
     /* color: rgb(0, 0, 0); */
 }
-
-
-
-.video-container {
-    float: left;
-    width: 640px;
-    /* Set your desired custom width */
-    height: calc(640px * 0.5625);
-    /* 16:9 aspect ratio (height is 56.25% of width) */
-    box-sizing: border-box;
-}
-
-
