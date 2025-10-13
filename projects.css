@@ -1,4 +1,12 @@
 /* Default styles for video container */
+.project-image-container {
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    top: 0;
+    left: 0;
+}
+
 .video-container {
     float: left;
     width: 50%;

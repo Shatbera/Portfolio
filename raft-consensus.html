@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<link rel="stylesheet" type="text/css" href="main.css">
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bear-time.html">Bear Time</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="merge-horizons.html">Merge Horizons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="space-explorer.html">Educational Platform</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="raft-consensus.html">Raft Consensus</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <link rel="stylesheet" type="text/css" href="projects.css">
+        <h1>Raft Consensus Algorithm</h1>
+        <div class="badges">
+            <a href="https://github.com/Shatbera/Raft" target="_blank">
+                <img alt='View on GitHub' src="images/github.png" />
+            </a>
+        </div>
+        <br>
+
+        <div class="video-container">
+            <div class="project-image-container">
+                <img src="images/raft-diagram.png" class="img-fluid" alt="Raft Algorithm Diagram">
+            </div>
+        </div>
+
+        <div class="game-info">
+            <p data-label="Language:">Go</p>
+            <p data-label="Course:">MIT 6.5840</p>
+            <p data-label="Type:">Distributed Systems</p>
+            <p data-label="Project Length:">4 Weeks</p>
+        </div>
+
+        <div class="contribution">
+            <h2>PROJECT OVERVIEW</h2>
+            <br>
+
+            <p><strong>Description</strong></p>
+            <p>
+                Implementation of the Raft consensus algorithm as part of MIT's 6.5840 Distributed Systems course.
+                Raft is a distributed consensus protocol designed to be easy to understand and implement, ensuring
+                that multiple servers agree on a replicated log even in the presence of failures such as crashes
+                and network partitions.
+            </p>
+
+            <p><strong>Core Features</strong></p>
+            <ul>
+                <li>Leader election with randomized timeouts to prevent split votes</li>
+                <li>Log replication ensuring consistency across all nodes</li>
+                <li>State machine transitions between follower, candidate, and leader states</li>
+                <li>Safety and consistency guarantees under network partitions</li>
+                <li>Crash recovery and fault tolerance mechanisms</li>
+            </ul>
+
+            <p><strong>Technical Implementation</strong></p>
+            <ul>
+                <li>Implemented as a goroutine-based state machine in Go</li>
+                <li>Used channels for inter-goroutine communication and signaling</li>
+                <li>RPC-based communication between distributed nodes</li>
+                <li>Comprehensive test suite simulating network failures and partitions</li>
+                <li>Handles edge cases like leader crashes, network splits, and log inconsistencies</li>
+            </ul>
+
+            <p><strong>Algorithm Components</strong></p>
+            <ul>
+                <li><strong>Leader Election:</strong> Ensures exactly one leader is elected safely using randomized
+                    election timeouts</li>
+                <li><strong>Log Replication:</strong> Leader receives client requests and replicates entries to follower
+                    nodes</li>
+                <li><strong>Safety:</strong> Guarantees that committed entries are never lost and logs remain consistent
+                </li>
+                <li><strong>Persistence:</strong> Critical state persisted to survive crashes and maintain correctness
+                </li>
+            </ul>
+
+            <p><strong>Testing & Validation</strong></p>
+            <ul>
+                <li>Passed all MIT lab test cases including unreliable network conditions</li>
+                <li>Tested scenarios: leader crashes, network partitions, log conflicts, and recovery</li>
+                <li>Verified correctness under concurrent operations and failure scenarios</li>
+                <li>Performance tested with multiple nodes and high request volumes</li>
+            </ul>
+
+            <p><strong>Key Challenges Solved</strong></p>
+            <ul>
+                <li>Race conditions in leader election and log replication</li>
+                <li>Handling network partitions and split-brain scenarios</li>
+                <li>Ensuring log consistency during leader changes</li>
+                <li>Optimizing performance while maintaining correctness guarantees</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
