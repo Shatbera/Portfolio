@@ -111,4 +111,13 @@ a {
     .project-thumbnail {
         margin-bottom: 20px;
     }
+    
+    /* Ensure proper spacing between thumbnail and text on mobile */
+    .order-1 {
+        margin-bottom: 0 !important;
+    }
+    
+    .order-2 {
+        margin-top: 0 !important;
+    }
 }
