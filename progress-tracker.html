@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<link rel="stylesheet" type="text/css" href="main.css">
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bear-time.html">Bear Time</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="space-explorer.html">Educational Platform</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="merge-horizons.html">Merge Horizons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="corely.html">Corely</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="progress-tracker.html">Progress Tracker</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="raft-consensus.html">Raft Consensus</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <link rel="stylesheet" type="text/css" href="projects.css">
+        <h1>Personal Progress Tracker</h1>
+        <div class="badges">
+            <a href="https://github.com/Shatbera/personal-progress-tracker" target="_blank">
+                <img alt='View on GitHub' src="images/github.png" />
+            </a>
+        </div>
+        <br>
+        <div class="video-container">
+            <div id="progressTrackerCarousel" class="project-image-container carousel slide mb-4" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/progress-tracker/screenshot_1.png" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/progress-tracker/screenshot_2.png" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/progress-tracker/screenshot_3.png" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/progress-tracker/screenshot_4.png" class="d-block w-100">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#progressTrackerCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#progressTrackerCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="game-info">
+            <p data-label="Platform:">Web</p>
+            <p data-label="Type:">Full-Stack Application</p>
+            <p data-label="Stack:">NestJS + Next.js + PostgreSQL</p>
+            <p data-label="Status:">Active Development</p>
+        </div>
+
+        <div class="contribution">
+            <h2>PROJECT OVERVIEW</h2>
+            <br>
+
+            <p><strong>Description</strong></p>
+            <p>
+                A full-stack web application for creating, managing, and tracking personal quests and daily habits. 
+                The Personal Progress Tracker enables users to set goals, build habits, and monitor their progress 
+                through an intuitive dashboard with comprehensive statistics and event logging.
+            </p>
+
+            <p><strong>Key Features</strong></p>
+            <ul>
+                <li><strong>Quest Management:</strong> Create and manage two types of quests - Simple Goals for one-off tasks and Daily Tracks for recurring habits.</li>
+                <li><strong>Progress Tracking:</strong> Log events (complete, fail, partial) to update quest points and maintain detailed progress history.</li>
+                <li><strong>Daily Habit Streaks:</strong> Track daily entries with streak counting and per-day logging for consistent habit building.</li>
+                <li><strong>Quest Categories:</strong> Organize quests using built-in or custom categories for better management.</li>
+                <li><strong>Dashboard Analytics:</strong> View aggregated statistics, recent activity, and personal progress overview.</li>
+                <li><strong>JWT Authentication:</strong> Secure user authentication and authorization with token-based system.</li>
+            </ul>
+
+            <p><strong>Technical Architecture</strong></p>
+            <ul>
+                <li><strong>Backend (NestJS):</strong> RESTful API with modular architecture separating concerns across authentication, quests, categories, events, and dashboard modules.</li>
+                <li><strong>Database (PostgreSQL):</strong> Relational database with TypeORM for entity management, migrations, and complex queries.</li>
+                <li><strong>Frontend (Next.js 13+):</strong> Server-side rendering with App Router, React Server Components, and Server Actions for seamless API communication.</li>
+                <li><strong>Type Safety:</strong> Full TypeScript implementation across both frontend and backend for enhanced developer experience and code reliability.</li>
+            </ul>
+
+            <p><strong>Backend Development</strong></p>
+            <ul>
+                <li>Built RESTful API with NestJS following SOLID principles and clean architecture patterns.</li>
+                <li>Implemented JWT-based authentication system with secure password hashing and token management.</li>
+                <li>Designed normalized PostgreSQL schema with proper relationships and constraints using TypeORM.</li>
+                <li>Created comprehensive CRUD operations for quests, categories, events, and daily tracking.</li>
+                <li>Developed aggregation queries for dashboard statistics and recent activity feeds.</li>
+                <li>Implemented database seeding script for development and testing environments.</li>
+            </ul>
+
+            <p><strong>Frontend Development</strong></p>
+            <ul>
+                <li>Built modern UI with Next.js 13+ App Router and React Server Components for optimal performance.</li>
+                <li>Implemented Server Actions for type-safe API communication without manual endpoint management.</li>
+                <li>Created responsive layouts for authentication flows, dashboard overview, and quest management pages.</li>
+                <li>Designed intuitive UX for quest creation, progress logging, and daily habit tracking.</li>
+                <li>Developed real-time updates for quest statistics and dashboard metrics.</li>
+            </ul>
+
+            <p><strong>Development Practices</strong></p>
+            <ul>
+                <li><strong>Version Control:</strong> Git repository with structured commit history and branch management.</li>
+                <li><strong>Docker Integration:</strong> Containerized PostgreSQL database for consistent development environment.</li>
+                <li><strong>Code Quality:</strong> TypeScript strict mode, ESLint configuration, and consistent code formatting.</li>
+                <li><strong>Documentation:</strong> Comprehensive README with setup instructions and project structure overview.</li>
+            </ul>
+
+            <p><strong>Technology Stack</strong></p>
+            <ul>
+                <li><strong>Backend Framework:</strong> NestJS - Progressive Node.js framework with TypeScript support</li>
+                <li><strong>Frontend Framework:</strong> Next.js 13+ - React framework with App Router and Server Components</li>
+                <li><strong>Database:</strong> PostgreSQL 16 - Robust relational database with advanced features</li>
+                <li><strong>ORM:</strong> TypeORM - Feature-rich ORM for TypeScript and JavaScript</li>
+                <li><strong>Language:</strong> TypeScript - Strongly-typed superset of JavaScript</li>
+                <li><strong>Authentication:</strong> JWT - JSON Web Tokens for secure authentication</li>
+                <li><strong>Containerization:</strong> Docker - Platform for developing and running containerized applications</li>
+            </ul>
+
+            <p><strong>Project Outcomes & Learning</strong></p>
+            <ul>
+                <li>Gained hands-on experience with modern full-stack development using NestJS and Next.js ecosystem.</li>
+                <li>Deepened understanding of REST API design, database schema design, and ORM best practices.</li>
+                <li>Learned advanced Next.js features including App Router, Server Components, and Server Actions.</li>
+                <li>Enhanced skills in authentication flows, JWT implementation, and secure password management.</li>
+                <li>Improved ability to architect scalable applications with clean separation of concerns.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
